@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+
+    <header>
+        <button id="b1">Главная</button>
+        <button id="b2">Герои</button>
+        <button id="b3">Картинки</button>
+        <button id="b4">Тест</button>
+        <button id="b5">Личный кабинет</button>
+        <a class="exit" href="index.html">Выйти</a>
+    </header>
+
+    <main>
+        <div class="page one">
+            <div class="content">
+                <h1 class="title">Ромашковая долина</h1>
+                <div class="container">
+                    <p class="text">Смешарики. Это те самые забавные и неординарные персонажи, что завоевали сердца зрителей по всему миру. </p> 
+                    <div class="row">
+                        <img src="./style/img/1pict.jpg" class="pic" alt="picture"> 
+                        <div class="text-column">
+                            <p class="text">Каждый из них уникален, наполненный характером и особенностями, что делают их повседневные приключения не только смешными, но и поучительными. В мире смешариков нет места грусти, а веселое настроение считается обязательным атрибутом. Смешарики преодолевают трудности с юмором, создавая из сложных ситуаций комичные сценарии, которые могут вызвать смех даже у самого серьезного зрителя.</p> 
+                            <p class="text">Но за каждым шутливым моментом часто скрываются глубокие жизненные уроки. Смешарики учат дружбе, взаимопомощи и принятию себя. Нельзя забывать о том, что даже в самых весёлых эпизодах их истории звучит тревога и настойчивый призыв к поддержке друг друга. Поэтому каждый случай в их жизни может прямо или косвенно дать зрителю пищу для размышлений. </p> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-column">
+                            <p class="text">Каждый герой – это отражение чего-то человеческого, что делает их поистине близкими и понятными каждому. Они не просто мультфильм, а целый мир, в который хочется вернуться снова и снова.</p> 
+                            <p class="text">Так почему же смешарики продолжают быть популярными? Причин немало. Во-первых, это их умение находить радость даже в обыденных вещах. Во-вторых, они смогли завоевать симпатию не только детей, но и взрослых, став, по сути, брендовой культурой. Каждый персонаж, каждый сюжет – это возможность поразмышлять о жизни и смеяться от души.</p>  
+                        </div>
+                        <img src="./style/img/2pict.jpg" class="pic" alt="picture"> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="page two no">
+            <div class="content">
+                <h1 class="title">Персонажи</h1>
+
+                    <input type="text" id="vvod" placeholder="Введите имя персонажа.." class="field">
+                    <div id="vyvod" class="card"></div>
+            </div>
+        </div>
+
+        <div class="page three no">
+            <div class="content">
+                <h1 class="title">Галерея</h1>
+
+                <div class="def show close"><img class="img_slider" src="./style/img/1mem.jpg" alt=""></div>
+                <div class="def"><img class="img_slider" src="./style/img/2mem.jpg" alt=""></div>
+                <div class="def"><img class="img_slider" src="./style/img/3mem.jpg" alt=""></div>
+                <div class="def"><img class="img_slider" src="./style/img/4mem.jpg" alt=""></div>
+                <div class="def"><img class="img_slider" src="./style/img/5mem.jpg" alt=""></div>
+                <div class="def"><img class="img_slider" src="./style/img/6mem.jpg" alt=""></div>
+                <div class="def"><img class="img_slider" src="./style/img/7mem.jpg" alt=""></div>
+                <div class="def"><img class="img_slider" src="./style/img/8mem.jpg" alt=""></div>
+
+                <div class="container-buttons">
+                    <button id="btn1" class="butn1"><</button>
+                    <button id="btn" class="butn">></button>
+                </div>
+
+                <span class="slide-number">1 / 5</span>
+
+            </div>
+        </div>
+
+        <div class="page four no">
+            <div class="content">
+                <h1 class="title">Кто вы из смешариков?</h1>
+
+                <div class="bod">
+                    <form name="test" novalidate> 
+                
+                        <div class="inpuut">
+                            <label for="quest1">Вы смотрели смешариков?</label>
+                            <input type="text" id="quest1" pattern="[Дд]а" required>
+
+                            <div class="output_er" id="er_8"></div>
+                        </div>
+                
+                        <div  class="inpuut">
+                            <div> Как вы предпочитаете проводить свободное время?</div>
+                
+                            <input type="radio" name="r_two" id="1.1" value="0.5">
+                            <label for="1.1">Занимаясь спортом и играми</label><br>
+                            
+                            <input type="radio" name="r_two" id="1.2" value="3">
+                            <label for="1.2">Попивая чай или вспоминая прошлые приключения</label><br>
+                
+                            <input type="radio" name="r_two" id="1.3" value="2">
+                            <label for="1.3">Мастеря или создавая что-то интересное</label><br>
+                
+                            <input type="radio" name="r_two" id="1.4" value="1">
+                            <label for="1.4">Встречаясь с друзьями</label><br>
+                
+                            <input type="radio" name="r_two" id="1.5" value="4">
+                            <label for="1.5">Прихорашиваясь у зеркала или наряжаясь</label><br>
+
+                            <div class="output_er" id="er_1"></div>
+                        </div>
+                
+                        <div class="inpuut">
+                            <div>Как бы вы описали свой характер?</div>
+                
+                            <input type="radio" name="r_three" id="2.1" value="0.5">
+                            <label for="2.1">Забавный и легкомысленный</label><br>
+                            
+                            <input type="radio" name="r_three" id="2.2" value="3">
+                            <label for="2.2">Серьёзный и спокойный</label><br>
+                
+                            <input type="radio" name="r_three" id="2.3" value="2">
+                            <label for="2.3">Творческий и необычный</label><br>
+                
+                            <input type="radio" name="r_three" id="2.4" value="4">
+                            <label for="2.4">Эмоциональный и восприимчивый</label><br>
+                
+                            <input type="radio" name="r_three" id="2.5" value="1">
+                            <label for="2.5">Доброжелательный и заботливый</label><br>
+
+                            <div class="output_er" id="er_2"></div>
+                        </div>
+                
+                        <div class="inpuut">
+                            <div>Как вы реагируете на трудности?</div>
+                
+                            <input type="radio" name="r_four" id="3.1" value="0.5">
+                            <label for="3.1">С улыбкой и шуткой</label><br>
+                
+                            <input type="radio" name="r_four" id="3.2" value="4">
+                            <label for="3.2">Озадачиваюсь и пытаюсь решить проблему</label><br>
+                            
+                            <input type="radio" name="r_four" id="3.3" value="2">
+                            <label for="3.3">Ищу креативное решение</label><br>
+                
+                            <input type="radio" name="r_four" id="3.4" value="3">
+                            <label for="3.4">Анализирую ситуацию</label><br>
+                
+                            <input type="radio" name="r_four" id="3.5" value="1">
+                            <label for="3.5">Поддерживаю других, чтобы вместе решить проблему</label><br>
+
+                            <div class="output_er" id="er_3"></div>
+                        </div>
+                
+                        <div class="inpuut">
+                            <div>Какие люди вас бесят больше всего?</div>
+                
+                            <input type="radio" name="r_five" id="5.1" value="0.5">
+                            <label for="5.1">Нытики</label><br>
+                
+                            <input type="radio" name="r_five" id="5.2" value="2">
+                            <label for="5.2">Лицемеры</label><br>
+                            
+                            <input type="radio" name="r_five" id="5.3" value="4">
+                            <label for="5.3">Те, у которых нет собственного мнения</label><br>
+                
+                            <input type="radio" name="r_five" id="5.4" value="1">
+                            <label for="5.4">С завышенной самооценкой</label><br>
+                
+                            <input type="radio" name="r_five" id="5.5" value="3">
+                            <label for="5.5">Бездельники</label><br>
+
+                            <div class="output_er" id="er_4"></div>
+                        </div>
+                
+                        <div class="inpuut">
+                            <div>Какой жанр музыки вам нравится больше всего?</div>
+                
+                            <input type="radio" name="r_six" id="6.1" value="1">
+                            <label for="6.1">Джаз</label><br>
+                
+                            <input type="radio" name="r_six" id="6.2" value="4">
+                            <label for="6.2">Поп</label><br>
+                            
+                            <input type="radio" name="r_six" id="6.3" value="3">
+                            <label for="6.3">Классическая музыка</label><br>
+                
+                            <input type="radio" name="r_six" id="6.4" value="0.5">
+                            <label for="6.4">Электронная музыка</label><br>
+                
+                            <input type="radio" name="r_six" id="6.5" value="2">
+                            <label for="6.5">Рок</label><br>
+
+                            <div class="output_er" id="er_5"></div>
+                        </div>
+                
+                        <div class="inpuut">
+                            <div>Что из следующего ближе к вашей жизненной позиции?</div>
+                            
+                            <input type="radio" name="r_seven" id="7.1" value="3">
+                            <label for="7.1">Знание - сила</label><br>
+                
+                            <input type="radio" name="r_seven" id="7.2" value="1">
+                            <label for="7.2">Я знаю, что ничего не знаю</label><br>
+                            
+                            <input type="radio" name="r_seven" id="7.3" value="0.5">
+                            <label for="7.3">В здоровом теле здоровый дух</label><br>
+                
+                            <input type="radio" name="r_seven" id="7.4" value="4">
+                            <label for="7.4">Красота требует жертв</label><br>
+                
+                            <input type="radio" name="r_seven" id="7.5" value="2">
+                            <label for="7.5">Работает - не трогай</label><br>
+
+                            <div class="output_er" id="er_6"></div>
+                        </div>
+                
+                        <div class="inpuut">
+                            <label for="quest8">Вы счастливы?</label>
+                            <input type="text" id="quest8" pattern="[Дд]а" required>
+
+                            <div class="output_er" id="er_7"></div>
+                        </div>
+                
+                        <div class="submit"> 
+                            <input type="submit" value="Узнать результат" class="sub">
+                        </div>
+                        
+
+                        <div class="out33">
+                            <div class="output33" id="output33"></div>
+                        </div>
+
+                        <div class="descriptionn">
+                            <div class="descript" id="descriptionn"></div>
+                        </div>
+
+                        <div class="descriptionn">
+                            <div class="descript" id="descript_img"></div>
+                        </div>
+                        
+                        <div class="cont_again">
+                            <button type="button" class="again" id="again">Пройти заново</button>
+                        </div>
+                
+                    </form>
+                    </div>
+
+            </div>
+        </div>
+
+        <div class="page five no">
+            <div class="content">
+                <h1 class="title">Личный кабинет</h1>
+                <div class="output">
+                    <div class="outputt" id="output1"></div>
+                    <div class="outputt" id="output2"></div>
+                    <div class="outputt" id="output4"></div>
+                    <div class="output3" id="output3"></div>
+                    <a class="link" href="index.html">Выйти</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">+7 987 654 32 10</div>
+        <div class="foot">
+            <a href="https://vk.com/" target="_blank"><img src="./style/network/vk.png" alt="vk" class="network"></a>
+            <a href="https://facebook.com/" target="_blank"><img src="./style/network/facebook.png" alt="facebook" class="network"></a>
+            <a href="https://instagram.com/" target="_blank"><img src="./style/network/insta.png" alt="instagram" class="network"></a>
+            <a href="https://tiktok.com/" target="_blank"><img src="./style/network/tik_tok.png" alt="tik tok" class="network"></a>
+        </div>
+        <div class="foot">Соня Якимова ©<br> 2024</div>
+    </footer>
+
+    <script src="./script/for_menu.js"></script>
+    <script src="./script/for_authorization.js"></script>
+    <script src="./script/search.js"></script>
+    <script src="./script/slider.js"></script>
+    <script src="./script/test.js"></script>
+    <script src="./script/search_field.js"></script>
+    
+</body>
+</html>

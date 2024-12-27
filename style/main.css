@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0; /* Скрыть полосу прокрутки для WebKit-браузеров */
+}
+
+body::-ms-scrollbar {
+    width: 0; /* Скрыть полосу прокрутки для Edge и IE */
+}
+  
+header {
+  background-image: linear-gradient(to bottom right, rgb(160, 197, 255), rgb(255, 209, 225));
+  height: 100px;
+  padding: 0px;
+  gap: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+button{
+  height: 80px;
+  width: 150px;
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(to top, blue, pink);
+  border-radius: 10%;
+  border: 0px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
+
+button:focus{
+  background-image: linear-gradient(to bottom, blue, pink);
+}
+
+.active {
+  background-image: linear-gradient(to bottom, blue, pink);
+}
+
+.exit {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
+  
+  main{
+    flex-grow: 1;
+    padding-top: 80px; 
+    padding-bottom: 50px;
+  }
+
+  .one{
+    position: relative;
+    min-height: 100vh;
+    height: auto; 
+}
+
+.one::before {
+    content: "";
+    background-image: url("./wallpaper/wall_2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5; 
+    z-index: 0;
+}
+
+h1{
+  color: rgb(21, 21, 126);
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
+
+.text{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  color: rgb(17, 10, 80);
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
+
+.pic{
+  height: 180px;
+  border-radius: 15px;
+  padding: 15px;
+  border: 10px dotted rgb(21, 47, 126);
+}
+
+.container {
+  max-width: 1200px; /* Ширина контейнера */
+  margin: 0 auto; /* Центрирование контейнера */
+  padding: 20px; /* Отступы */
+}
+
+.row {
+  display: flex;
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  margin-bottom: 20px; /* Отступ между рядами */
+}
+
+.pic {
+  max-width: 300px; /* Максимальная ширина для изображений */
+  margin-right: 20px; /* Отступ справа от изображения */
+}
+
+.text-column {
+  flex: 1; /* Разрешает текстовому блоку занимать оставшееся пространство */
+}
+
+
+.two{
+    position: relative; 
+    overflow: auto; 
+    min-height: 100vh;
+    height: auto;
+}
+
+.two::before {
+    content: "";
+    background-image: url("./wallpaper/wall_3.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5; 
+    z-index: 0;
+}
+
+#vyvod {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 90%;
+}
+
+.item { 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: space-between; 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  margin-bottom: 10px; 
+  transition: all 0.3s ease-in-out; 
+  width: 90%;
+} 
+
+.item.expanded {
+  height: auto; /* Увеличение высоты карточки */
+}
+
+.description { 
+  display: flex; 
+  display: none;
+  flex-direction: column; 
+  padding: 10px; 
+  background-color: rgba(21, 25, 126, 0.19); 
+  margin-left: 20px; 
+} 
+
+.hidden {
+  display: none;
+}
+
+.expanded .description,
+.expanded img {
+  display: block;
+}
+
+.image-class {
+  width: 100%;
+  max-width: 200px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.field{
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+}
+
+.card{
+  display: block;
+  margin: 10px;
+  margin-left: 40px;
+  background-color: rgba(179, 57, 106, 0.59);
+  width: 20%;
+}
+
+.three{
+    position: relative; 
+    overflow: hidden; 
+    min-height: 100vh;
+    height: auto;
+}
+
+.three::before {
+    content: "";
+    background-image: url("./wallpaper/wall_4.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5; 
+    z-index: 0;
+}
+
+:root{
+  --el: 0;
+}
+
+.def{
+  justify-content: center;
+  opacity: 0;
+  display: none;
+  transition: 1s;
+  transform: translateX(var(--el));
+}
+
+.img_slider{
+  margin-top: 10px;
+  width: 500px;
+  height: 420px;
+}
+
+.show{
+  display: flex;
+}
+
+.close{
+  opacity: 1;
+}
+
+.container-buttons {
+  text-align: center; /* Центрирование кнопок горизонтально */
+  margin-top: 20px;   /* Отступ сверху для отделения от слайдера */
+}
+
+.butn {
+  width: 70px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer; /* Указатель мыши в виде руки при наведении */
+}
+
+.butn1 {
+  margin-right: 20px; /* Отступ между кнопками */
+  width: 70px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer; /* Указатель мыши в виде руки при наведении */
+}
+
+.slide-number {
+  color: rgb(10, 25, 80);
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  display: block;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
+
+.four{
+    position: relative; 
+    margin-bottom: 20px;
+    
+}
+
+.four::before {
+    content: "";
+    background-image: url("./wallpaper/wall_5.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5; 
+    z-index: 0;
+}
+
+.bod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inpuut{
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Comic Sans MS;
+    color: rgb(18, 10, 80);
+    border: 5px dotted rgb(18, 10, 80);
+  }
+
+input[type="text"]{
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: rgb(18, 10, 80);
+  background-color: rgba(141, 187, 252, 0.421);
+}
+
+input[type="radio"] {
+  transform: scale(1.6);
+  accent-color: rgb(18, 10, 80);
+}
+
+.submit {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.sub{
+  font-size: 20px;
+  height: 40px;
+  width: 190px;
+  border-radius: 4px;
+  color: rgb(18, 10, 80);
+  background-color: rgb(102, 204, 255);
+  border: 2px solid black;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
+
+.output3{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+  color: rgb(17, 10, 80);
+}
+
+.out33{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.output33{
+  font-size: 20px;
+  color: rgb(18, 10, 80);
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
+
+.descriptionn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descript{
+  max-width: 400px;
+  font-size: 20px;
+  color: rgb(18, 10, 80);
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
+
+.output_er{
+  margin-top: 10px;
+  color: rgb(255, 0, 0);
+}
+
+.cont_again{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.again{
+  width: 150px;
+  font-size: 20px;
+  color: rgb(18, 10, 80);
+  background-color: rgb(253, 181, 181);
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+
+.five{
+    position: relative; 
+    overflow: hidden; 
+    min-height: 100vh;
+    height: auto;
+}
+
+.five::before {
+    content: "";
+    background-image: url("./wallpaper/wall_6.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5; 
+    z-index: 0;
+}
+
+.output{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin: 30px auto;
+  border: 10px dotted rgb(3, 35, 98);
+  max-width: 380px;
+  width: 100%; 
+  padding: 40px 0;
+}
+
+.outputt{
+  color: rgb(17, 10, 80);
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
+
+.link{
+  color: rgb(49, 95, 234);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+}
+
+.link:hover{
+  color: rgb(16, 16, 91);
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+}
+
+  .title{
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .no{
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+    display: flex;
+    height: 70px;
+    background-image: linear-gradient(to bottom right, rgb(105, 155, 234), rgb(242, 178, 250));
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 1000;
+}
+
+.foot{
+    margin: 7px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: Comic Sans MS;
+}
+
+.network{
+  height: 30px;
+  width: auto;
+}
+  

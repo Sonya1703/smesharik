@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="./style/login.css">
+</head>
+
+<body>
+
+    <div class="content">
+
+        <h1>Авторизация</h1>
+
+        <form name="login" novalidate>
+            <div class="register">
+                <label for="fio" class="text">Введите логин<br>(На русском языке с использованием цифр. От 4 до 10 символов)</label>
+                <input type="text" id="fio" name="fio" class="inp" pattern = '[а-яА-ЯёЁ0-9]{4,10}' required />
+                <div id="out1" class="output_er"></div>
+                <div id="output1" class="no"></div>
+
+                <label for="date" class="text">Введите вашу дату рождения</label>
+                <input type="date" id="date" name="date" class="inp" min="1950" max="2024-12-02" required />
+                <div id="out2" class="output_er"></div>
+                <div id="output2" class="no"></div>
+
+                <div class="text">Ваш пол: </div>
+
+                <div class="radio">
+                    <input type="radio" name="r__" id=".1" value="Мужской">
+                    <label for=".1">Мужской</label>
+
+                    <input type="radio" name="r__" id=".2" value="Женский">
+                    <label for=".2">Женский</label>
+
+                </div>
+
+                <div id="out4" class="output_er"></div>
+
+                <div id="output4" class="no"></div>
+
+                <button type="submit">Отправить</button>
+                <div id="out3" class="no"></div>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="./script/for_login.js"></script>
+
+</body>
+
+</html>
